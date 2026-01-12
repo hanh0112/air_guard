@@ -1,0 +1,131 @@
+{
+  "cutoff": "2017-01-01 00:00:00",
+  "n_train": 0,
+  "n_test": 16396,
+  "accuracy": 0.5206147840936813,
+  "f1_macro": 0.3970655144661286,
+  "report": {
+    "Good": {
+      "precision": 0.19282511210762332,
+      "recall": 0.044147843942505136,
+      "f1-score": 0.07184628237259816,
+      "support": 974.0
+    },
+    "Hazardous": {
+      "precision": 0.7494014365522745,
+      "recall": 0.5111594991834513,
+      "f1-score": 0.6077669902912621,
+      "support": 1837.0
+    },
+    "Moderate": {
+      "precision": 0.5080503144654088,
+      "recall": 0.8540917741594417,
+      "f1-score": 0.6371164918368957,
+      "support": 4729.0
+    },
+    "Unhealthy": {
+      "precision": 0.5201863354037267,
+      "recall": 0.5551609848484849,
+      "f1-score": 0.5371049015116812,
+      "support": 4224.0
+    },
+    "Unhealthy_for_Sensitive_Groups": {
+      "precision": 0.2206896551724138,
+      "recall": 0.02962962962962963,
+      "f1-score": 0.052244897959183675,
+      "support": 2160.0
+    },
+    "Very_Unhealthy": {
+      "precision": 0.509208103130755,
+      "recall": 0.44741100323624594,
+      "f1-score": 0.4763135228251507,
+      "support": 2472.0
+    },
+    "accuracy": 0.5206147840936813,
+    "macro avg": {
+      "precision": 0.4500601594720337,
+      "recall": 0.4069334558332931,
+      "f1-score": 0.3970655144661286,
+      "support": 16396.0
+    },
+    "weighted avg": {
+      "precision": 0.48180966102117917,
+      "recall": 0.5206147840936813,
+      "f1-score": 0.4731884143750664,
+      "support": 16396.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      43,
+      912,
+      0,
+      19,
+      0,
+      0
+    ],
+    [
+      49,
+      4039,
+      95,
+      537,
+      9,
+      0
+    ],
+    [
+      44,
+      1210,
+      64,
+      809,
+      33,
+      0
+    ],
+    [
+      63,
+      1334,
+      88,
+      2345,
+      377,
+      17
+    ],
+    [
+      22,
+      367,
+      21,
+      659,
+      1106,
+      297
+    ],
+    [
+      2,
+      88,
+      22,
+      139,
+      647,
+      939
+    ]
+  ],
+  "labels": [
+    "Good",
+    "Moderate",
+    "Unhealthy_for_Sensitive_Groups",
+    "Unhealthy",
+    "Very_Unhealthy",
+    "Hazardous"
+  ],
+  "feature_cols": [
+    "hour",
+    "day",
+    "month",
+    "dayofweek",
+    "pm25_lag_1",
+    "pm25_lag_2",
+    "TEMP",
+    "PRES",
+    "DEWP",
+    "RAIN",
+    "WSPM"
+  ],
+  "categorical_cols": [],
+  "numeric_cols": []
+}
